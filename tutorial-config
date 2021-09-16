@@ -1,0 +1,28 @@
+server {
+       listen 81;
+       listen [::]:81;
+
+       server_name example.ubuntu.com;
+
+       root /var/www/tutorial;
+       index index.html;
+
+	location /tenKB {
+	 index tenKB;
+	}
+	location /oneMB {
+	 index oneMB;
+	}
+	location /twoMB {
+	 index twoMB;
+	}
+	location /eightMB {
+	 index eightMB;
+	}
+	location /tenMB {
+	 index tenMB;
+	}
+	location /oneHunderedKB{
+	 index oneHunderedKB;
+	}
+}
