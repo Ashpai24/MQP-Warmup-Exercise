@@ -26,3 +26,15 @@ server {
 	 index oneHunderedKB;
 	}
 }
+
+server{
+  listen unix:/var/run/nginx.sock;
+  server_name example.ubuntu.com'
+
+  root /var/ww/tutorial;
+  index index.html;
+
+  location /tenKB{
+    index tenKB;
+  }
+}
